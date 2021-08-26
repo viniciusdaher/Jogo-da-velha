@@ -1,0 +1,74 @@
+*{
+  padding: 0;
+  border: 0;
+  box-sizing:border-box;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+
+:root{
+    --verde: #1A472A; 
+    --amarelo: #F89306;
+    --bege: #EAE4C2;
+    --vermelho: #330004; 
+
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+body{
+    background-color: var(--verde);
+}
+
+
+.board{
+    text-align: center;
+    
+}
+
+
+.square{
+    width: 120px;
+    height: 120px;
+    background-color: var(--bege);
+    border: 1px solid var(--vermelho);
+    
+    display: inline-block;
+}
+
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    content: url(/img/harryPotter_O.png);
+    
+    position: absolute;
+    left: 5px;
+    right: 0;
+    top: 10px;
+    bottom: 0;
+
+}
+
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    content: url(/img/harryPotter_X.png);
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 17px;
+    bottom: 0;
+
+}
