@@ -89,7 +89,7 @@ section #player-win{
     left: 0;
     right: 0;
     text-align: center;
-    top: 180px;
+    top: 155px;
     
 
 }
@@ -164,4 +164,9 @@ nav{
       0%  {width: 10px;}
     100%  {width: 220px;}
     
+}
+@keyframes opacity {
+    
+    from {opacity: 100%;}
+    to {opacity: 0%;}
 }

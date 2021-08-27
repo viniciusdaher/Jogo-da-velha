@@ -6,9 +6,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
 })
 
-player1 = "vinicius"
 function handleClick(event){
-    console.log(event.target);
+    // console.log(event.target);
 
     let square = event.target;
     let position = square.id;
@@ -22,8 +21,40 @@ function handleClick(event){
     updateSquares(position);  
 }
 
+
+
 function updateSquares(position){
     let square = document.getElementById(position.toString());
     let symbol = board[position];
     square.innerHTML = `<div class=${symbol}></div>`
+   
+}
+
+let play = document.getElementById("play");
+play.addEventListener("click", playGo);
+
+
+
+function playGo(){
+    let player1 = document.getElementById("player1").value;
+    let player2 = document.getElementById("player2").value;
+    
+    playerWin.push(player1);
+    playerWin.push(player2);
+
+   
+    let menu = document.querySelector(".menu").style.
+    animation = "opacity 1s forwards";
+
+    setTimeout(() => {
+        
+        document.querySelector(".menu").style.display = "none"
+       
+    
+    }
+        , 800);
+    
+    
+
+    
 }
