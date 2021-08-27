@@ -6,27 +6,24 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
 })
 
+player1 = "vinicius"
 function handleClick(event){
     console.log(event.target);
 
     let square = event.target;
     let position = square.id;
 
-    handleMove(position);
-    updateSquares();
+    if (handleMove(position)){
+        let win = document.getElementById("player-win")
+        win.innerHTML = "<h3>" + playerWin[playerTimer] + " é o vencedor da rodada!";
+        win.style.display = "inline-block";
+    }
+    
+    updateSquares(position);  
 }
 
-function updateSquares(){
-    let squares = document.querySelectorAll(".square");
-
-    squares.forEach(square => {
-        let position = square.id;
-        let symbol = board[position];
-
-        if(symbol != ""){
-            square.innerHTML = `<div class=${symbol}></div>`
-        }
-    })
-
-    console.log(board)
+function updateSquares(position){
+    let square = document.getElementById(position.toString());
+    let symbol = board[position];
+    square.innerHTML = `<div class=${symbol}></div>`
 }

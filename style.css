@@ -72,3 +72,96 @@ body{
     bottom: 0;
 
 }
+
+section{
+    text-align: center;
+}
+
+section #player-win{
+    background-color: var(--vermelho);
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 180px;
+    
+
+}
+
+nav{
+    background-color: var(--amarelo);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px black solid;
+    overflow: hidden;
+
+    animation: openmenu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+.player{
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+   
+    animation: openplayer;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+   
+    
+}
+
+ #player1{
+    color: var(--vermelho);
+}
+
+#player2{
+    color: var(--verde);
+}
+#play{
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    background-color: var(--vermelho);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    width: 220px;
+
+    animation: openplayer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out ;
+    
+    
+}
+#play:hover{
+    background-color: var(--verde);
+    color: #fff;
+    
+    
+}
+@keyframes openmenu {
+    
+    from {width: 0px;}
+    to {width: 265px;}
+}
+@keyframes openplayer {
+
+      0%  {width: 10px;}
+    100%  {width: 220px;}
+    
+}
