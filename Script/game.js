@@ -3,7 +3,10 @@ let playerTimer = 0;
 let symbols = ["o", "x"]
 let gameOver = false;
 var cont = 0;
-
+var ptsPlayer1 = 0;
+var ptsPlayer2 = 0;
+verificador = true;
+   
 var playerWin = []
 
 let winStates = [
@@ -66,13 +69,11 @@ function isWin() {
                 
             }
             
-
-
+            
     }
     
     
     return false;
 }
-
 
 

@@ -22,11 +22,20 @@ h1{
 }
 
 body{
-    background-color: var(--verde);
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
+#logo{
+    display: block;
+    margin: auto;
+    
+}
 
 .board{
+    margin-top: 20px;
     text-align: center;
     
 }
@@ -35,8 +44,10 @@ body{
 .square{
     width: 120px;
     height: 120px;
-    background-color: var(--bege);
+    background-color: #fff;
+    opacity: 85%;
     border: 1px solid var(--vermelho);
+   ;
     
     display: inline-block;
 }
@@ -81,7 +92,11 @@ section #player-win{
     background-color: var(--vermelho);
     display: none;
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 110px;
+    padding-right: 110px;
+    font-size: 10px;
+    border-radius: 20px;
 }
 
 .menu{
@@ -89,7 +104,7 @@ section #player-win{
     left: 0;
     right: 0;
     text-align: center;
-    top: 155px;
+    top: 240px;
     
 
 }
@@ -154,6 +169,37 @@ nav{
     
     
 }
+
+
+#restart{
+    color: #fff;
+    background-color: var(--verde);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 80%;
+    transition: opacity 0.5s;
+}
+
+#placar{
+    background-color: rgba(0, 0, 0, 0.733);
+    display: inline-block;
+    padding: 5px 130px 20px 130px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+#restart:hover{
+    opacity: 100%;
+
+    
+}
+
 @keyframes openmenu {
     
     from {width: 0px;}
